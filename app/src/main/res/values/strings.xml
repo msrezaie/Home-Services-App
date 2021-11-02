@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FinalBuild_Dec20</string>
+
+    <string-array name="Service_Category">
+        <item></item>
+        <item>House Cleaner</item>
+        <item>Electrician</item>
+        <item>Carpenter</item>
+        <item>Cook</item>
+        <item>Handyman</item>
+        <item>House Setter</item>
+        <item>Car Mechanic</item>
+    </string-array>
+
+
+    <string-array name="Account_Type">
+        <item>Admin</item>
+        <item>User</item>
+        <item>Client</item>
+    </string-array>
+</resources>

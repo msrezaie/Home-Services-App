@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderStatus">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                app:cardCornerRadius="13dp"
+                android:background="@color/cardview_dark_background"
+                android:layout_marginTop="15dp" >
+                <TextView
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request Status"
+                    android:textColor="#0E82D2"
+                    android:textSize="25dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#0E82D2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Detailed Information of the Order"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                app:cardCornerRadius="13dp"
+                android:background="@color/cardview_dark_background"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#0E82D2"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:textAlignment="center"
+                    android:text="Service Provider"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name:"
+                        android:textColor="#0E82D2"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/cliFname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number:"
+                        android:textColor="#0E82D2"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/cliPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Home Address:"
+                        android:textColor="#0E82D2"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/cliHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Service Category:"
+                        android:textColor="#0E82D2"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/cliService"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                app:cardCornerRadius="13dp"
+                android:background="@color/cardview_dark_background"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#0E82D2"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:textAlignment="center"
+                    android:text="Requester"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name:"
+                        android:textColor="#0E82D2"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/usrFname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number:"
+                        android:textColor="#0E82D2"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/usrPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Home Address:"
+                        android:textColor="#0E82D2"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/usrHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#0E82D2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Request Detail"/>
+
+            <TextView
+                android:id="@+id/usrClExtra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="19dp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#0E82D2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Client's Message"/>
+
+            <TextView
+                android:id="@+id/clientMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textSize="19dp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#0E82D2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Order's Approval"/>
+
+            <TextView
+                android:id="@+id/reqStat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textSize="19dp"
+                android:layout_marginHorizontal="10dp" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#0E82D2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Requester's Rating of this Service Provider"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:stretchColumns="*">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/ratePerc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/rateDesc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout
+                android:id="@+id/user_side"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#0E82D2"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:text="Rate this Client's Service"/>
+
+                    <RatingBar
+                        android:id="@+id/userRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <Button
+                        android:id="@+id/usr_submitReq"
+                        android:layout_width="200dp"
+                        android:onClick="testClick"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:padding="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#0E82D2" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/client_side"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#0E82D2"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:text="Approve Order"/>
+
+                    <RadioGroup
+                        android:id="@+id/choice_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Accepted"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:gravity="center"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rejected"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#0E82D2"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:text="Your Message to the Requester"/>
+
+                    <EditText
+                        android:id="@+id/cliEMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="19dp"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <Button
+                        android:id="@+id/cli_submitReq"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:padding="10dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#0E82D2" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
